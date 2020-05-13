@@ -1,0 +1,195 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background:#f0f0f0;
+  font-family: sans-serif;
+}
+
+header {
+  background: url(Images/header/grayMacBookAir.jpg) center center no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+header img {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 50px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: 300px auto 50px;
+  height: 100vh;
+}
+
+.navigation {
+  width: 100%;
+  max-width: 1280px;
+  height: 100%;
+  margin: auto;
+  padding: 30px 20px;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  overflow-y: auto;
+  background: white;
+  box-shadow: 0 16px 14px 0 rgba(12, 0, 51, 0.1);
+}
+
+nav ul, nav ul li {
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  list-style-type: none;
+  text-align: center;
+}
+nav ul li {
+  background-color: #363b48;
+  border: 1px solid #f0f0f0;
+  border-radius: 10px;
+}
+
+input {
+  display: none;
+}
+
+li label {
+  display: block;
+  color: #f0f0f0;
+  font-size: 14px;
+  padding: 10px;
+}
+section {
+  padding: 0 80px 50px;
+}
+section div {
+  padding-left: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.table th, .table td {
+  padding: 8px;
+  border: 1px solid #cccccc;
+  background-color: #f0f0f0;
+}
+
+.table tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+
+.table tr:hover { 
+  background-color: #ddd;
+}
+
+.table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #363b48;
+  color: #fff;
+  width: 50%;
+
+}
+
+
+.tips-tricks {
+  list-style-type: circle;
+  padding: 10px;
+  margin-left: 30px; 
+}
+
+
+.img-center {
+  border: 1px solid #363b48;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+  
+
+.steps {
+  padding: 10px;
+}
+
+.scripts1 {
+  width: 100%;
+  border: 1px solid #363b48;
+  
+}
+
+.scripts2 {
+  margin-top: 20px;
+  margin-right: 70px;
+  width: 40%;
+  float: left;
+}
+
+.scripts3 {
+  width: 40%;
+  float: left;
+  border: 1px solid #363b48;
+}
+
+.img-performance {
+  border: none;
+}
+
+.img-performance img {
+  border: 1px solid #363b48;
+  width: 100%;
+}
+
+.img-performance td{
+  padding: 20px 10px;
+}
+
+
+footer p {
+  text-align: center;
+}
+
+.navigation > input, .navigation section > div {
+  display: none;
+} 
+
+#tab1:checked ~ section .tab1,
+#tab2:checked ~ section .tab2,
+#tab3:checked ~ section .tab3,
+#tab4:checked ~ section .tab4,
+#tab5:checked ~ section .tab5,
+#tab6:checked ~ section .tab6,
+#tab7:checked ~ section .tab7,
+#tab8:checked ~ section .tab8,
+#tab9:checked ~ section .tab9 {
+  display: block;
+}
+
+#tab1:checked ~ nav .tab1,
+#tab2:checked ~ nav .tab2,
+#tab3:checked ~ nav .tab3,
+#tab4:checked ~ nav .tab4,
+#tab5:checked ~ nav .tab5,
+#tab6:checked ~ nav .tab6,
+#tab7:checked ~ nav .tab7,
+#tab8:checked ~ nav .tab8,
+#tab9:checked ~ nav .tab9 {
+  background-color:red;
+}
+
+
+
+
+
+
+
